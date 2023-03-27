@@ -12,7 +12,7 @@ Instead we just do in on the test set, which yields similar performance with tha
 * Some training configs like learning scheduler are different from that in paper.
 * The result on iSUN is slightly better than that in paper, while lsun-crop is not. The reason-why is still to be figured out. 
 
-###Environment
+## Environment
 Please set the environment as.
 
 Pytorch == 1.10.1+cu102 
@@ -22,7 +22,7 @@ numpy == 1.19.5 python == 3.6.9 64- bit.
 The experiments are on a single NVIDIA Tesla V100 32G.
 
 
-###Start training
+## Start training
 
 Please mkdir the fold 'data', and download all the datasets into it from the baseline work ODIN: https://github.com/facebookresearch/odin. Training logs and trained model parameters would be saved under the path 'exp_result'.
 
