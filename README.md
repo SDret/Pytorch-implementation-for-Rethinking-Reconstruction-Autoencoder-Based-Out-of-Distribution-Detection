@@ -6,7 +6,7 @@ re-implementing it. Thus, there might be minor differences regarding the
 original results. Specifically, 
 
 * In this code, we do not partion the validation set for the 'scale' and 'location' fitting of Gaussian CDFs.
-Instead we just do in on the test set, which yields similar performance with that in the paper.
+Instead we just do it on the test set, which yields similar performance with that in the paper.
 * Some training configs like learning scheduler are different from that in paper.
 * The result on iSUN is slightly better than that in paper, while lsun-crop is not. The reason-why is still to be figured out. 
 
