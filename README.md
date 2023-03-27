@@ -11,7 +11,9 @@ python == 3.6.9 64- bit.
 
 The experiments are on a single NVIDIA Tesla V100 32G.
 
-Please download all the datasets under the path 'data', from the baseline work ODIN in its public code: https://github.com/facebookresearch/odin. To start the two-phase training, you need run:
+Please mkdir the fold 'data' and download all the datasets under the path it, from the baseline work ODIN in its public code: https://github.com/facebookresearch/odin. Logs and trained model parameters would be saved under the path 'exp_result'.
+
+To start the two-phase training, you need run:
 
 CUDA_VISIBLE_DEVICES=0 python3 train.py --cfg ./configs/ood/cifar100.yaml
 
