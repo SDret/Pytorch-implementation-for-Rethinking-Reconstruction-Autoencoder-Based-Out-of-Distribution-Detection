@@ -1,4 +1,4 @@
-###About this code
+# About this code
 This is the public implementation of CVPR2022 paper 
 'Rethinking Reconstruction Autoencoder-Based Out-of-Distribution Detection'.
 This code comes late since the author focused on other areas and now turns back 
