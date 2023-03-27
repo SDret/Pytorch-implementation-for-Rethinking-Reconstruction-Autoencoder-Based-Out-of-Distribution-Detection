@@ -1,0 +1,35 @@
+NAME: 'ID'
+
+RELOAD:
+  TYPE: False
+
+DATASET:
+  VAL_SPLIT: test
+  TYPE: 'cifar'
+  NAME: 'cifar100'
+
+BACKBONE:
+  TYPE: 'wideresnet'
+  #TYPE: 'densenet'
+  DROP_OUT: 0.1
+
+TRAIN:
+  BN_WD: True
+  NON_BLOCKING: True
+  MAX_EPOCH: 200
+  CLIP_GRAD: False
+  BATCH_SIZE: 128
+  EPSILON: 10.
+  CLS_LOSS_WEIGHT: 0.
+  OPTIMIZER:
+    TYPE: 'sgd'
+    WEIGHT_DECAY: 0.
+    NESTEROV: True
+    MOMENTUM: 0.9
+  LR_SCHEDULER:
+    #TYPE: 'multistep'
+    #LR_STEP: [100,225]
+    #FACTOR: 0.1
+    TYPE: 'annealing_cosine'
+    LR_FT: 1e-1
+    LR_NEW: 1e-1

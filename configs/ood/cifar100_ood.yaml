@@ -1,0 +1,38 @@
+NAME: 'OOD'
+
+RELOAD:
+  TYPE: True
+  PTH: 'saved_model/backbone/WRN_28_10_01_crop05'
+
+DATASET:
+  VAL_SPLIT: test
+  TYPE: 'cifar'
+  NAME: 'cifar100'
+
+BACKBONE:
+  TYPE: 'wideresnet'
+  #TYPE: 'densenet'
+  DROP_OUT: 0.0
+
+TRAIN:
+  BN_WD: True
+  NON_BLOCKING: True
+  MAX_EPOCH: 300
+  CLIP_GRAD: False
+  BATCH_SIZE: 128
+  EPSILON: 10.
+  CLS_LOSS_WEIGHT: 1.
+  OPTIMIZER:
+    TYPE: 'adam'
+    WEIGHT_DECAY: 0.
+    # NESTEROV: True
+    # MOMENTUM: 0.9
+  LR_SCHEDULER:
+    #LR_STEP: [150,225]
+    #FACTOR: 0.1
+    #TYPE: 'multistep'
+    TYPE: 'annealing_cosine'
+    LR_FT: 1e-4
+    LR_NEW: 1e-4
+  EMA:
+    ENABLE: False
