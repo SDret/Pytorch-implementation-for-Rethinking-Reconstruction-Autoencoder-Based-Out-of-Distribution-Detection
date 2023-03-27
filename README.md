@@ -10,9 +10,10 @@ Instead we just do in on the test set, which yields similar performance with tha
 * Some training configs like learning scheduler are different from that in paper.
 * The result on iSUN is slightly better than that in paper, while lsun-crop is not. The reason-why is still to be figured out. 
 
-The results on WRN-28-10 with CIFAR-100 is (FPR@95%TPR, detection error, AUROC and AUPR)
 
 ## Results
+The results on WRN-28-10 with CIFAR-100 is (FPR@95%TPR, detection error, AUROC and AUPR)
+
 ![image](https://github.com/SDret/Pytorch-implementation-for-Rethinking-Reconstruction-Autoencoder-Based-Out-of-Distribution-Detection/blob/main/results.png)
 
 
