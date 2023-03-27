@@ -31,7 +31,7 @@ To start the two-phase training, you need run:
 ```
 CUDA_VISIBLE_DEVICES=0 python3 train.py --cfg ./configs/ood/cifar100.yaml
 ```
-and move the saved trained model under the path 'saved_model/backbone/$BACKBONETYPE$'. Next run the code:
+and move the saved trained model under the path 'saved_model/backbone/$BACKBONETYPE$'. Next, modify this path in the config file 'cifar100_ood.yaml' and run the code:
 
 ```
 CUDA_VISIBLE_DEVICES=0 python3 train.py --cfg ./configs/ood/cifar100_ood.yaml
