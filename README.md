@@ -12,6 +12,7 @@ Instead we just do in on the test set, which yields similar performance with tha
 
 The results on WRN-28-10 with CIFAR-100 is (FPR@95%TPR, detection error, AUROC and AUPR)
 
+## Results
 ![image](https://github.com/SDret/Pytorch-implementation-for-Rethinking-Reconstruction-Autoencoder-Based-Out-of-Distribution-Detection/blob/main/results.png)
 
 
