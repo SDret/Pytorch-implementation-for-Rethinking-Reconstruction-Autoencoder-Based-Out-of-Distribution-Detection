@@ -10,6 +10,7 @@ Instead we just do in on the test set, which yields similar performance with tha
 * Some training configs like learning scheduler are different from that in paper.
 * The result on iSUN is slightly better than that in paper, while lsun-crop is not. The reason-why is still to be figured out. 
 
+If the Tensorflow original implementation of this work is desired, please contact us with ybzhou@buaa.edu.cn
 ## Environment
 Please set the environment as.
 
