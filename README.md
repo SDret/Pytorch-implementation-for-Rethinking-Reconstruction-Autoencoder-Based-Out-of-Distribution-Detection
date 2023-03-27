@@ -12,7 +12,7 @@ Instead we just do in on the test set, which yields similar performance with tha
 
 If the Tensorflow original implementation of this work is desired, feel free to contact us with ybzhou@buaa.edu.cn
 ## Environment
-Please set the environment as.
+Please set the environment as
 
 Pytorch == 1.10.1+cu102 
 
