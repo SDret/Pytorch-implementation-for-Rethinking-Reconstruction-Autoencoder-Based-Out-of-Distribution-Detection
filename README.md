@@ -1,5 +1,5 @@
 # About this code
-This is the public implementation of CVPR2022 paper 
+This is the official implementation of CVPR2022 paper 
 'Rethinking Reconstruction Autoencoder-Based Out-of-Distribution Detection'. The original benchmark results in paper 
 were produced in Tensorflow 1.14.0, and this codebase is a pytorch version of 
 re-implementing it. Thus, there might be minor differences regarding the 
