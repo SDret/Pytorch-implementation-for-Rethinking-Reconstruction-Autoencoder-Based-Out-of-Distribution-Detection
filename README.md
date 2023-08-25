@@ -28,7 +28,7 @@ numpy == 1.19.5 python == 3.6.9 64- bit.
 
 ## Start training
 
-Please mkdir the folder 'data', and download all the datasets into it from the baseline work ODIN: https://github.com/facebookresearch/odin. Training logs and trained model parameters would be saved under the path 'exp_result'.
+Please mkdir the folder 'data', and download all the datasets into it from the baseline work ODIN: https://github.com/facebookresearch/odin. Training logs and trained model parameters would be saved under the path 'exp_result'. To make the pickle file of datasets you need to run the script 'dataset/ood/preprocess/format_cifar100.py' first.
 
 To start the two-phase training, you need run:
 
