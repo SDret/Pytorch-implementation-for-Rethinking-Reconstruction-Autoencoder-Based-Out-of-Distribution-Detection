@@ -28,7 +28,7 @@ numpy == 1.19.5 python == 3.6.9 64- bit.
 
 ## Start training
 
-Please mkdir the folder 'data', and download all the datasets into it from the baseline work ODIN: https://github.com/facebookresearch/odin. Training logs and trained model parameters would be saved under the path 'exp_result'. To make the pickle file of datasets you need to run the script 'dataset/ood/preprocess/format_cifar100.py' first.
+Please mkdir the folder 'data', and download all the datasets into it from the baseline work ODIN: https://github.com/facebookresearch/odin. To make the pickle file of datasets you need to run the scripts in 'dataset/ood/preprocess' first. 
 
 To start the two-phase training, you need run:
 
@@ -40,5 +40,5 @@ and move the saved trained model under the path 'saved_model/backbone/$BACKBONET
 ```
 CUDA_VISIBLE_DEVICES=0 python3 train.py --cfg ./configs/ood/cifar100_ood.yaml
 ```
-Benchmark results will be automatically printed while training.
+Benchmark results will be automatically printed while training. Training logs and trained model parameters would be saved under the path 'exp_result'.
 
